@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>sf</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;sf
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="sf-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module sf</h1><p class="nomargin-top"></p>
+<p>Class and some supporting functions for representing and manipulating 
+  system functions.</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="sf.SystemFunction-class.html" class="summary-name">SystemFunction</a><br />
+      Represent a system function as a ratio of polynomials in R
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="sf.DifferenceEquation-class.html" class="summary-name">DifferenceEquation</a><br />
+      Represent a difference equation in a form that makes it easy to 
+        simulate.
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#Cascade" class="summary-sig-name">Cascade</a>(<span class="summary-sig-arg">sf1</span>,
+        <span class="summary-sig-arg">sf2</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing the cascade of 
+      <code>sf1</code> and <code>sf2</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#FeedforwardAdd" class="summary-sig-name">FeedforwardAdd</a>(<span class="summary-sig-arg">sf1</span>,
+        <span class="summary-sig-arg">sf2</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing the sum of <code>sf1</code> 
+      and <code>sf2</code>; this models the situation when the two 
+      component systems have the same input and the output of the whole 
+      system is the sum of the outputs of the components.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#FeedforwardSubtract" class="summary-sig-name">FeedforwardSubtract</a>(<span class="summary-sig-arg">sf1</span>,
+        <span class="summary-sig-arg">sf2</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing the difference of 
+      <code>sf1</code> and <code>sf2</code>; this models the situation when
+      the two component systems have the same input and the output of the 
+      whole system is the output of the first component minus the output of
+      the second component.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#FeedbackSubtract" class="summary-sig-name">FeedbackSubtract</a>(<span class="summary-sig-arg">sf1</span>,
+        <span class="summary-sig-arg">sf2</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing the result of feeding the 
+      output of <code>sf1</code> back, with (optionally) <code>sf2</code> 
+      on the feedback path, subtracting it from the input, and feeding the 
+      resulting signal into <code>sf1</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#FeedbackAdd" class="summary-sig-name">FeedbackAdd</a>(<span class="summary-sig-arg">sf1</span>,
+        <span class="summary-sig-arg">sf2</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing the result of feeding the 
+      output of <code>sf1</code> back, with (optionally) <code>sf2</code> 
+      on the feedback path, adding it to the input, and feeding the 
+      resulting signal into <code>sf1</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#Sum" class="summary-sig-name">Sum</a>(<span class="summary-sig-arg">sf1</span>,
+        <span class="summary-sig-arg">sf2</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing the system that sums the 
+      outputs of the two systems</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#Gain" class="summary-sig-name">Gain</a>(<span class="summary-sig-arg">k</span>)</span><br />
+      Returns:
+      <code>SystemFunction</code> representing a system that multiplies the
+      input signal by <code>k</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#R" class="summary-sig-name">R</a>()</span><br />
+      Returns:
+      <code>SystemFunction</code> representing a system that delays the 
+      input signal by one step.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#periodOfPole" class="summary-sig-name">periodOfPole</a>(<span class="summary-sig-arg">p</span>)</span><br />
+      Returns:
+      period = 2 pi / phase of pole  or None (if phase is 0)</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="sf-module.html#complexPolar" class="summary-sig-name">complexPolar</a>(<span class="summary-sig-arg">p</span>)</span><br />
+      Returns:
+      polar representation as a pair of r, theta</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="None">None</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="Cascade"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Cascade</span>(<span class="sig-arg">sf1</span>,
+        <span class="sig-arg">sf2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sf1</code></strong> - <code>SystemFunction</code></li>
+        <li><strong class="pname"><code>sf2</code></strong> - <code>SystemFunction</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing the cascade of 
+          <code>sf1</code> and <code>sf2</code></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="FeedforwardAdd"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">FeedforwardAdd</span>(<span class="sig-arg">sf1</span>,
+        <span class="sig-arg">sf2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sf1</code></strong> - <code>SystemFunction</code></li>
+        <li><strong class="pname"><code>sf2</code></strong> - <code>SystemFunction</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing the sum of 
+          <code>sf1</code> and <code>sf2</code>; this models the situation 
+          when the two component systems have the same input and the output
+          of the whole system is the sum of the outputs of the components.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="FeedforwardSubtract"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">FeedforwardSubtract</span>(<span class="sig-arg">sf1</span>,
+        <span class="sig-arg">sf2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sf1</code></strong> - <code>SystemFunction</code></li>
+        <li><strong class="pname"><code>sf2</code></strong> - <code>SystemFunction</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing the difference of 
+          <code>sf1</code> and <code>sf2</code>; this models the situation 
+          when the two component systems have the same input and the output
+          of the whole system is the output of the first component minus 
+          the output of the second component.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="FeedbackSubtract"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">FeedbackSubtract</span>(<span class="sig-arg">sf1</span>,
+        <span class="sig-arg">sf2</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sf1</code></strong> - <code>SystemFunction</code></li>
+        <li><strong class="pname"><code>sf2</code></strong> - <code>SystemFunction</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing the result of feeding 
+          the output of <code>sf1</code> back, with (optionally) 
+          <code>sf2</code> on the feedback path, subtracting it from the 
+          input, and feeding the resulting signal into <code>sf1</code>.  
+          This situation can be characterized with Black's formula.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="FeedbackAdd"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">FeedbackAdd</span>(<span class="sig-arg">sf1</span>,
+        <span class="sig-arg">sf2</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sf1</code></strong> - <code>SystemFunction</code></li>
+        <li><strong class="pname"><code>sf2</code></strong> - <code>SystemFunction</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing the result of feeding 
+          the output of <code>sf1</code> back, with (optionally) 
+          <code>sf2</code> on the feedback path, adding it to the input, 
+          and feeding the resulting signal into <code>sf1</code>.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Sum"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Sum</span>(<span class="sig-arg">sf1</span>,
+        <span class="sig-arg">sf2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sf1</code></strong> - <code>SystemFunction</code></li>
+        <li><strong class="pname"><code>sf2</code></strong> - <code>SystemFunction</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing the system that sums the
+          outputs of the two systems</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Gain"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Gain</span>(<span class="sig-arg">k</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>k</code></strong> - gain parameter</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing a system that multiplies
+          the input signal by <code>k</code>.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="R"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">R</span>()</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns:</dt>
+        <dd><code>SystemFunction</code> representing a system that delays the
+          input signal by one step.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="periodOfPole"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">periodOfPole</span>(<span class="sig-arg">p</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>p</code></strong> - int, float, or complex number</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>period = 2 pi / phase of pole  or None (if phase is 0)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="complexPolar"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">complexPolar</span>(<span class="sig-arg">p</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>p</code></strong> - int, float, or complex number</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>polar representation as a pair of r, theta</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:07:30 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

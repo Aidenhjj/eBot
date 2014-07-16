@@ -1,0 +1,6 @@
+#!C:\Users\Abhishek\AppData\Local\Enthought\Canopy\User\Scripts\python.exe
+
+import form.main
+import soar
+import soar.application
+form.main.Application(soar.application.application)

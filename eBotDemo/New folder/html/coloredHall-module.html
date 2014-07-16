@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>coloredHall</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;coloredHall
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="coloredHall-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module coloredHall</h1><p class="nomargin-top"></p>
+<p>State estimation example: localization in a colored hallway</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="coloredHall.TextInputSM-class.html" class="summary-name">TextInputSM</a><br />
+      Machine that prompts a user for an input on each step.
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#makeObservationModel" class="summary-sig-name">makeObservationModel</a>(<span class="summary-sig-arg">hallwayColors</span>,
+        <span class="summary-sig-arg">obsNoise</span>)</span><br />
+      Returns:
+      conditional distribution specifying probability of observing a color 
+      given the robot's location</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#perfectObsNoiseModel" class="summary-sig-name">perfectObsNoiseModel</a>(<span class="summary-sig-arg">actualColor</span>)</span><br />
+      Returns:
+      <code>DDist</code> over observed colors when in a room that has 
+      <code>actualColor</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#noisyObsNoiseModel" class="summary-sig-name">noisyObsNoiseModel</a>(<span class="summary-sig-arg">actualColor</span>)</span><br />
+      Returns:
+      <code>DDist</code> over observed colors when in a room that has 
+      <code>actualColor</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#makeTransitionModel" class="summary-sig-name">makeTransitionModel</a>(<span class="summary-sig-arg">dynamics</span>,
+        <span class="summary-sig-arg">noiseDist</span>,
+        <span class="summary-sig-arg">hallwayLength</span>)</span><br />
+      Returns:
+      P(actualResultingLoc | previousLoc, action) represented as a function
+      that takes an action and returns a function that takes a previous 
+      location and returns a distribution over actual resulting locations.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#standardDynamics" class="summary-sig-name">standardDynamics</a>(<span class="summary-sig-arg">loc</span>,
+        <span class="summary-sig-arg">act</span>,
+        <span class="summary-sig-arg">hallwayLength</span>)</span><br />
+      Returns:
+      new loc of the robot assuming perfect execution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#ringDynamics" class="summary-sig-name">ringDynamics</a>(<span class="summary-sig-arg">loc</span>,
+        <span class="summary-sig-arg">act</span>,
+        <span class="summary-sig-arg">hallwayLength</span>)</span><br />
+      Returns:
+      new loc of the robot, assuming perfect execution where the hallway is
+      actually a ring (so that location 0 is next to location 
+      <code>hallwayLength -1</code>).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#perfectTransNoiseModel" class="summary-sig-name">perfectTransNoiseModel</a>(<span class="summary-sig-arg">nominalLoc</span>,
+        <span class="summary-sig-arg">hallwayLength</span>)</span><br />
+      Returns:
+      distribution over resulting locations, modeling noisy execution of 
+      commands;  in this case, the robot goes to the nominal location with 
+      probability 1.0</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#noisyTransNoiseModel" class="summary-sig-name">noisyTransNoiseModel</a>(<span class="summary-sig-arg">nominalLoc</span>,
+        <span class="summary-sig-arg">hallwayLength</span>)</span><br />
+      Returns:
+      distribution over resulting locations, modeling noisy execution of 
+      commands;  in this case, the robot goes to the nominal location with 
+      probability 0.8, goes one step too far left with probability 0.1, and
+      goes one step too far right with probability 0.1.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#leftSlipTransNoiseModel" class="summary-sig-name">leftSlipTransNoiseModel</a>(<span class="summary-sig-arg">nominalLoc</span>,
+        <span class="summary-sig-arg">hallwayLength</span>)</span><br />
+      Returns:
+      distribution over resulting locations, modeling noisy execution of 
+      commands;  in this case, the robot goes to the nominal location with 
+      probability 0.9, and goes one step too far left with probability 0.1.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="textOutput"></a><span class="summary-sig-name">textOutput</span>(<span class="summary-sig-arg">result</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#wrapTextUI" class="summary-sig-name">wrapTextUI</a>(<span class="summary-sig-arg">m</span>)</span><br />
+      Returns:
+      A composite machine that prompts the user for input to, and prints 
+      the output of <code>m</code> on each step.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#wrapWindowUI" class="summary-sig-name">wrapWindowUI</a>(<span class="summary-sig-arg">m</span>,
+        <span class="summary-sig-arg">worldColors</span>,
+        <span class="summary-sig-arg">legalInputs</span>,
+        <span class="summary-sig-arg">windowName</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">Belief</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">initBelief</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Returns:
+      A composite machine that prompts the user for input to, and 
+      graphically displays the output of <code>m</code> on each step.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="drawBelief"></a><span class="summary-sig-name">drawBelief</span>(<span class="summary-sig-arg">belief</span>,
+        <span class="summary-sig-arg">window</span>,
+        <span class="summary-sig-arg">numStates</span>,
+        <span class="summary-sig-arg">drawNums</span>=<span class="summary-sig-default">True</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#makeSESwithGUI" class="summary-sig-name">makeSESwithGUI</a>(<span class="summary-sig-arg">worldSM</span>,
+        <span class="summary-sig-arg">realColors</span>,
+        <span class="summary-sig-arg">legalInputs</span>,
+        <span class="summary-sig-arg">initBelief</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">False</span>,
+        <span class="summary-sig-arg">title</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">hallway</code><code class="variable-quote">'</code></span>)</span><br />
+      Makes a colored hallway simulator and state estimator.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="coloredHall-module.html#makeSim" class="summary-sig-name">makeSim</a>(<span class="summary-sig-arg">hallwayColors</span>,
+        <span class="summary-sig-arg">legalInputs</span>,
+        <span class="summary-sig-arg">obsNoise</span>,
+        <span class="summary-sig-arg">dynamics</span>,
+        <span class="summary-sig-arg">transNoise</span>,
+        <span class="summary-sig-arg">title</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">sim</code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">initialDist</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Make an instance of the simulator with noisy motion and sensing 
+      models.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="hallSE"></a><span class="summary-sig-name">hallSE</span>(<span class="summary-sig-arg">hallwayColors</span>,
+        <span class="summary-sig-arg">legalInputs</span>,
+        <span class="summary-sig-arg">obsNoise</span>,
+        <span class="summary-sig-arg">dynamics</span>,
+        <span class="summary-sig-arg">transNoise</span>,
+        <span class="summary-sig-arg">initialDist</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">verbose</span>=<span class="summary-sig-default">True</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="coloredHall-module.html#possibleColors" class="summary-name">possibleColors</a> = <code title="('black',
+ 'white',
+ 'red',
+ 'green',
+ 'blue',
+ 'purple',
+ 'orange',
+ 'darkGreen',
+..."><code class="variable-group">(</code><code class="variable-quote">'</code><code class="variable-string">black</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">white</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">red</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">green</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">blue</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">p</code><code class="variable-ellipsis">...</code></code><br />
+      Possible colors for rooms in our hallway
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="standardHallway"></a><span class="summary-name">standardHallway</span> = <code title="['white', 'white', 'green', 'white', 'white']"><code class="variable-group">[</code><code class="variable-quote">'</code><code class="variable-string">white</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">white</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">green</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">white</code><code class="variable-quote">'</code><code class="variable-op">, </code><code class="variable-quote">'</code><code class="variable-string">white</code><code class="variable-quote">'</code><code class="variable-group">]</code></code><br />
+      Our favorite configuration of hallway colors
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="None">None</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="makeObservationModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makeObservationModel</span>(<span class="sig-arg">hallwayColors</span>,
+        <span class="sig-arg">obsNoise</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>hallwayColors</code></strong> - list of colors, one for each room in the hallway, from left to 
+          right</li>
+        <li><strong class="pname"><code>obsNoise</code></strong> - conditional distribution specifying the probability of observing 
+          a color given the actual color of the room</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>conditional distribution specifying probability of observing a 
+          color given the robot's location
+          <p>Remember that a conditional distribution P(A | B) is 
+          represented as a function from values of b to distributions over 
+          A.</p></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="perfectObsNoiseModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">perfectObsNoiseModel</span>(<span class="sig-arg">actualColor</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>actualColor</code></strong> - actual color in a location</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>DDist</code> over observed colors when in a room that has 
+          <code>actualColor</code>.  In this case, we observe the actual 
+          color with probability 1.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="noisyObsNoiseModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">noisyObsNoiseModel</span>(<span class="sig-arg">actualColor</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>actualColor</code></strong> - actual color in a location</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>DDist</code> over observed colors when in a room that has 
+          <code>actualColor</code>.  In this case, we observe the actual 
+          color with probability 0.8, and the remaining 0.2 probability is 
+          divided uniformly over the other possible colors in this world.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makeTransitionModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makeTransitionModel</span>(<span class="sig-arg">dynamics</span>,
+        <span class="sig-arg">noiseDist</span>,
+        <span class="sig-arg">hallwayLength</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dynamics</code></strong> - function that takes the robot's current location, action, and 
+          hallwaylength, and returns its nominal new location</li>
+        <li><strong class="pname"><code>noiseDist</code></strong> - P(actualResultingLocation | nominalResultingLoc) represented as a
+          function from ideal location to the actual location the robot 
+          will end up in</li>
+        <li><strong class="pname"><code>hallwayLength</code></strong> - number of rooms in the hallway</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>P(actualResultingLoc | previousLoc, action) represented as a 
+          function that takes an action and returns a function that takes a
+          previous location and returns a distribution over actual 
+          resulting locations.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="standardDynamics"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">standardDynamics</span>(<span class="sig-arg">loc</span>,
+        <span class="sig-arg">act</span>,
+        <span class="sig-arg">hallwayLength</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>loc</code></strong> - current loc (integer index) of the robot</li>
+        <li><strong class="pname"><code>act</code></strong> - a positive or negative integer (or 0) indicating the nominal 
+          number of squares moved</li>
+        <li><strong class="pname"><code>hallwayLength</code></strong> - number of cells in the hallway</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>new loc of the robot assuming perfect execution.  If the action 
+          would take it out of bounds, the robot stays where it is.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ringDynamics"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ringDynamics</span>(<span class="sig-arg">loc</span>,
+        <span class="sig-arg">act</span>,
+        <span class="sig-arg">hallwayLength</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>loc</code></strong> - current loc (integer index) of the robot</li>
+        <li><strong class="pname"><code>act</code></strong> - positive or negative integer offset</li>
+        <li><strong class="pname"><code>hallwayLength</code></strong> - number of cells in the hallway</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>new loc of the robot, assuming perfect execution where the 
+          hallway is actually a ring (so that location 0 is next to 
+          location <code>hallwayLength -1</code>).</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="perfectTransNoiseModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">perfectTransNoiseModel</span>(<span class="sig-arg">nominalLoc</span>,
+        <span class="sig-arg">hallwayLength</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>nominalLoc</code></strong> - location that the robot would have ended up given perfect 
+          dynamics</li>
+        <li><strong class="pname"><code>hallwayLength</code></strong> - length of the hallway</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>distribution over resulting locations, modeling noisy execution 
+          of commands;  in this case, the robot goes to the nominal 
+          location with probability 1.0</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="noisyTransNoiseModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">noisyTransNoiseModel</span>(<span class="sig-arg">nominalLoc</span>,
+        <span class="sig-arg">hallwayLength</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>nominalLoc</code></strong> - location that the robot would have ended up given perfect 
+          dynamics</li>
+        <li><strong class="pname"><code>hallwayLength</code></strong> - length of the hallway</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>distribution over resulting locations, modeling noisy execution 
+          of commands;  in this case, the robot goes to the nominal 
+          location with probability 0.8, goes one step too far left with 
+          probability 0.1, and goes one step too far right with probability
+          0.1. If any of these locations are out of bounds, then the 
+          associated probability mass goes is assigned to the boundary 
+          location (either 0 or <code>hallwayLength-1</code>).</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="leftSlipTransNoiseModel"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">leftSlipTransNoiseModel</span>(<span class="sig-arg">nominalLoc</span>,
+        <span class="sig-arg">hallwayLength</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>nominalLoc</code></strong> - location that the robot would have ended up given perfect 
+          dynamics</li>
+        <li><strong class="pname"><code>hallwayLength</code></strong> - length of the hallway</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>distribution over resulting locations, modeling noisy execution 
+          of commands;  in this case, the robot goes to the nominal 
+          location with probability 0.9, and goes one step too far left 
+          with probability 0.1. If any of these locations are out of 
+          bounds, then the associated probability mass stays at 
+          <code>nominalLoc</code>.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="wrapTextUI"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">wrapTextUI</span>(<span class="sig-arg">m</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>m</code></strong> - An instance of <code>sm.SM</code></li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A composite machine that prompts the user for input to, and 
+          prints the output of <code>m</code> on each step.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="wrapWindowUI"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">wrapWindowUI</span>(<span class="sig-arg">m</span>,
+        <span class="sig-arg">worldColors</span>,
+        <span class="sig-arg">legalInputs</span>,
+        <span class="sig-arg">windowName</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">Belief</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">initBelief</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>m</code></strong> - A machine created by applying 
+          <code>se.makeStateEstimationSimulation</code> to a hallway world,
+          which take movement commands as input and generates as output 
+          structures of the form <code>(b, (o, a))</code>, where 
+          <code>b</code> is a belief state, <code>a</code> is the action 
+          command, and <code>o</code> is the observable output generated by
+          the world.</li>
+        <li><strong class="pname"><code>worldColors</code></strong> - A list of the colors of the rooms in the hallway, from left to 
+          right.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>A composite machine that prompts the user for input to, and 
+          graphically displays the output of <code>m</code> on each step.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makeSESwithGUI"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makeSESwithGUI</span>(<span class="sig-arg">worldSM</span>,
+        <span class="sig-arg">realColors</span>,
+        <span class="sig-arg">legalInputs</span>,
+        <span class="sig-arg">initBelief</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">verbose</span>=<span class="sig-default">False</span>,
+        <span class="sig-arg">title</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">hallway</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Makes a colored hallway simulator and state estimator.  Text input for
+  actions and graphical display of world and belief state.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>worldSM</code></strong> - instance of <code>ssm.StochasticSM</code> representing the world</li>
+        <li><strong class="pname"><code>realColors</code></strong> - A list of the colors of the rooms in the hallway, from left to 
+          right.</li>
+        <li><strong class="pname"><code>legalInputs</code></strong> - A list of the possible action commands</li>
+        <li><strong class="pname"><code>verbose</code></strong> - if <code>True</code> then print out belief state after each 
+          update</li>
+        <li><strong class="pname"><code>title</code></strong> - title of window being created</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makeSim"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makeSim</span>(<span class="sig-arg">hallwayColors</span>,
+        <span class="sig-arg">legalInputs</span>,
+        <span class="sig-arg">obsNoise</span>,
+        <span class="sig-arg">dynamics</span>,
+        <span class="sig-arg">transNoise</span>,
+        <span class="sig-arg">title</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">sim</code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">initialDist</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Make an instance of the simulator with noisy motion and sensing 
+  models.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>hallwayColors</code></strong> - A list of the colors of the rooms in the hallway, from left to 
+          right.</li>
+        <li><strong class="pname"><code>legalInputs</code></strong> - A list of the possible action commands</li>
+        <li><strong class="pname"><code>obsNoise</code></strong> - conditional distribution specifying the probability of observing 
+          a color given the actual color of the room</li>
+        <li><strong class="pname"><code>dynamics</code></strong> - function that takes the robot's current location, action, and 
+          hallwaylength, and returns its nominal new location</li>
+        <li><strong class="pname"><code>transNoise</code></strong> - P(actualResultingLocation | nominalResultingLoc) represented as a
+          function from ideal location to the actual location the robot 
+          will end up in</li>
+        <li><strong class="pname"><code>title</code></strong> - String specifying title for simulator window</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables Details</span></td>
+</tr>
+</table>
+<a name="possibleColors"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">possibleColors</h3>
+  <p>Possible colors for rooms in our hallway</p>
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">(</code><code class="variable-quote">'</code><code class="variable-string">black</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">white</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">red</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">green</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">blue</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">purple</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">orange</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">darkGreen</code><code class="variable-quote">'</code><code class="variable-op">,</code>
+<code class="variable-ellipsis">...</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:07:30 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

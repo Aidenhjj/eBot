@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>dynamicGridMap.DynamicGridMap</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="dynamicGridMap-module.html">Module&nbsp;dynamicGridMap</a> ::
+        Class&nbsp;DynamicGridMap
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="dynamicGridMap.DynamicGridMap-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class DynamicGridMap</h1><p class="nomargin-top"></p>
+<pre class="base-tree">
+gridMap.GridMap --+
+                  |
+                 <strong class="uidshort">DynamicGridMap</strong>
+</pre>
+
+<hr />
+<p>Implements the <code>GridMap</code> interface.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">xMin</span>,
+        <span class="summary-sig-arg">xMax</span>,
+        <span class="summary-sig-arg">yMin</span>,
+        <span class="summary-sig-arg">yMax</span>,
+        <span class="summary-sig-arg">gridSquareSize</span>)</span><br />
+      Basic initializer that determines the number of cells, and calls the 
+      <code>makeStartingGrid</code> method that any subclass must provide, 
+      to get the initial values.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#makeStartingGrid" class="summary-sig-name">makeStartingGrid</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns the initial value for <code>self.grid</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#squareColor" class="summary-sig-name">squareColor</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">indices</span>)</span><br />
+      Returns:
+      a color string indicating what color that cell should be drawn in.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#setCell" class="summary-sig-name">setCell</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">(xIndex, yIndex)</span>)</span><br />
+      Takes indices for a grid cell, and updates it, given information that
+      it contains an obstacle.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#clearCell" class="summary-sig-name">clearCell</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">(xIndex, yIndex)</span>)</span><br />
+      Takes indices for a grid cell, and updates it, given information that
+      it does not contain an obstacle.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#robotCanOccupy" class="summary-sig-name">robotCanOccupy</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">(xIndex, yIndex)</span>)</span><br />
+      Returns <code>True</code> if the robot's center can be at any 
+      location within the cell specified by <code>(xIndex, yIndex)</code> 
+      and not cause a collision.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="dynamicGridMap.DynamicGridMap-class.html#occupied" class="summary-sig-name">occupied</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">(xIndex, yIndex)</span>)</span><br />
+      Returns <code>True</code> if there is an obstacle in any part of this
+      cell.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>gridMap.GridMap</code></b>:
+      <code>boxDim</code>,
+      <code>drawNewSquare</code>,
+      <code>drawPath</code>,
+      <code>drawSquare</code>,
+      <code>drawWorld</code>,
+      <code>indexToX</code>,
+      <code>indexToY</code>,
+      <code>indicesToPoint</code>,
+      <code>makeWindow</code>,
+      <code>pointToIndices</code>,
+      <code>undrawPath</code>,
+      <code>xToIndex</code>,
+      <code>yToIndex</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">xMin</span>,
+        <span class="sig-arg">xMax</span>,
+        <span class="sig-arg">yMin</span>,
+        <span class="sig-arg">yMax</span>,
+        <span class="sig-arg">gridSquareSize</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Basic initializer that determines the number of cells, and calls the 
+  <code>makeStartingGrid</code> method that any subclass must provide, to 
+  get the initial values.  Makes a window and draws the initial world state
+  in it.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>xMin</code></strong> - least real x coordinate</li>
+        <li><strong class="pname"><code>xMax</code></strong> - greatest real x coordinate</li>
+        <li><strong class="pname"><code>yMin</code></strong> - least real y coordinate</li>
+        <li><strong class="pname"><code>yMax</code></strong> - greatest real y coordinate</li>
+        <li><strong class="pname"><code>gridSquareSize</code></strong> - size, in world coordinates, of a grid square</li>
+        <li><strong class="pname"><code>windowWidth</code></strong> - size, in pixels, to make the window for drawing this map</li>
+    </ul></dd>
+    <dt>Overrides:
+        <a href="gridMap.GridMap-class.html#__init__">gridMap.GridMap.__init__</a>
+        <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="makeStartingGrid"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">makeStartingGrid</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns the initial value for <code>self.grid</code>.  Can depend on 
+  <code>self.xN</code> and <code>self.yN</code> being set.</p>
+  <p>In this case, the grid is an array filled with the value 
+  <code>False</code>, meaning that the cells are not occupied.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="squareColor"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">squareColor</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">indices</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Default color scheme:  squares that the robot can occupy are white and
+  others are black.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>indices</code></strong> - <code>(ix, iy)</code> indices of a grid cell</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a color string indicating what color that cell should be drawn 
+          in.</dd>
+    <dt>Overrides:
+        <a href="gridMap.GridMap-class.html#squareColor">gridMap.GridMap.squareColor</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="setCell"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setCell</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">(xIndex, yIndex)</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Takes indices for a grid cell, and updates it, given information that 
+  it contains an obstacle.  In this case, it sets the cell to 
+  <code>True</code>, and redraws it if its color has changed.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="clearCell"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clearCell</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">(xIndex, yIndex)</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Takes indices for a grid cell, and updates it, given information that 
+  it does not contain an obstacle.  In this case, it sets the cell to 
+  <code>True</code>, and redraws it if its color has changed.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="robotCanOccupy"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">robotCanOccupy</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">(xIndex, yIndex)</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns <code>True</code> if the robot's center can be at any location
+  within the cell specified by <code>(xIndex, yIndex)</code> and not cause 
+  a collision.  This implementation is very slow:  it considers a range of 
+  boxes around the spcified box, and ensures that none of them is 
+  <code>self.occupied</code>.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="occupied"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">occupied</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">(xIndex, yIndex)</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns <code>True</code> if there is an obstacle in any part of this 
+  cell.  Note that it can be the case that a cell is not occupied, but the 
+  robot cannot occupy it (because if the robot's center were in that cell, 
+  some part of the robot would be in collision.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:07:30 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

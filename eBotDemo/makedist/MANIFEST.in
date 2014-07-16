@@ -1,0 +1,3 @@
+include libdw/*.pyc
+include soar/media/*
+include soar/worlds/*

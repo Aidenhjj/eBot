@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>code.libdw.replanner</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;code ::
+        Package&nbsp;libdw ::
+        Module&nbsp;replanner
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="code.libdw.replanner-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module replanner</h1><p class="nomargin-top"></p>
+<p>State machine classes for planning paths in a grid map.</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="code.libdw.replanner.Replanner-class.html" class="summary-name">Replanner</a><br />
+      This replanner state machine has a fixed map, which it constructs 
+        at initialization time.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="code.libdw.replanner.ReplannerWithDynamicMap-class.html" class="summary-name">ReplannerWithDynamicMap</a><br />
+      This replanner state machine has a dynamic map, which is an input 
+        to the state machine.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="code.libdw.replanner.ReplannerWithDynamicMapAndGoal-class.html" class="summary-name">ReplannerWithDynamicMapAndGoal</a><br />
+      This replanner state machine has a dynamic map and a dynamic goal, 
+        both of which are inputs to the state machine.
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="adjacent"></a><span class="summary-sig-name">adjacent</span>(<span class="summary-sig-arg">(x1, y1)</span>,
+        <span class="summary-sig-arg">(x2, y2)</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.replanner-module.html#newPathAndSubgoal" class="summary-sig-name">newPathAndSubgoal</a>(<span class="summary-sig-arg">worldMap</span>,
+        <span class="summary-sig-arg">sensorInput</span>,
+        <span class="summary-sig-arg">goalPoint</span>,
+        <span class="summary-sig-arg">dynamicsModel</span>,
+        <span class="summary-sig-arg">path</span>,
+        <span class="summary-sig-arg">timeToReplan</span>,
+        <span class="summary-sig-arg">scale</span>=<span class="summary-sig-default">1</span>)</span><br />
+      This procedure does the primary work of both replanner classes.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.replanner-module.html#planInvalidInMap" class="summary-sig-name">planInvalidInMap</a>(<span class="summary-sig-arg">map</span>,
+        <span class="summary-sig-arg">state</span>)</span><br />
+      Just checks to be sure the first two cells are occupiable.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="timeToReplanDynamicMap"></a><span class="summary-sig-name">timeToReplanDynamicMap</span>(<span class="summary-sig-arg">plan</span>,
+        <span class="summary-sig-arg">currentIndices</span>,
+        <span class="summary-sig-arg">map</span>,
+        <span class="summary-sig-arg">goalIndices</span>)</span><br />
+      Replan if the current plan is <code>None</code>, if the plan is 
+      invalid in the map (because it is blocked), or if the plan is empty 
+      and we are not at the goal (which implies that the last time we tried
+      to plan, we failed).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="timeToReplanDynamicMapAndGoal"></a><span class="summary-sig-name">timeToReplanDynamicMapAndGoal</span>(<span class="summary-sig-arg">plan</span>,
+        <span class="summary-sig-arg">currentIndices</span>,
+        <span class="summary-sig-arg">map</span>,
+        <span class="summary-sig-arg">goalIndices</span>)</span><br />
+      Replan if the current plan is <code>None</code>, if the plan is 
+      invalid in the map (because it is blocked), if the plan is empty and 
+      we are not at the goal (which implies that the last time we tried to 
+      plan, we failed), or if the end of the plan is not the same as the 
+      goal indices (which means the goal changed).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="timeToReplanDynamicMapWithKidnap"></a><span class="summary-sig-name">timeToReplanDynamicMapWithKidnap</span>(<span class="summary-sig-arg">state</span>,
+        <span class="summary-sig-arg">currentIndices</span>,
+        <span class="summary-sig-arg">map</span>,
+        <span class="summary-sig-arg">goalIndices</span>)</span><br />
+      Replan if the current plan is <code>None</code>, if the plan is 
+      invalid in the map (because it is blocked), or if the robot is not in
+      a grid cell that is adjacent to the first one in the plan.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.replanner-module.html#timeToReplanStaticMap" class="summary-sig-name">timeToReplanStaticMap</a>(<span class="summary-sig-arg">plan</span>,
+        <span class="summary-sig-arg">currentIndices</span>,
+        <span class="summary-sig-arg">worldMap</span>,
+        <span class="summary-sig-arg">goalIndices</span>)</span><br />
+      When the map is static, we just test for kidnapping.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'code.libdw'"><code class="variable-quote">'</code><code class="variable-string">code.libdw</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="newPathAndSubgoal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">newPathAndSubgoal</span>(<span class="sig-arg">worldMap</span>,
+        <span class="sig-arg">sensorInput</span>,
+        <span class="sig-arg">goalPoint</span>,
+        <span class="sig-arg">dynamicsModel</span>,
+        <span class="sig-arg">path</span>,
+        <span class="sig-arg">timeToReplan</span>,
+        <span class="sig-arg">scale</span>=<span class="sig-default">1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>This procedure does the primary work of both replanner classes. It 
+  tests to see if the current plan is empty or invalid.  If so, it calls 
+  the planner to make a new plan.  Then, given a plan, if the robot has 
+  reached the first grid cell in the plan, it removes that grid cell from 
+  the front of the plan.  Finally, it gets the the center of the current 
+  first grid-cell in the plan, in odometry coordinates, and generates that 
+  as the subgoal.</p>
+  <p>It uses a heuristic in the planning, which is the Cartesian distance 
+  between the current location of the robot in odometry coordinates 
+  (determined by finding the center of the grid square) and the goal 
+  location.</p>
+  <p>Whenever a new plan is made, it is drawn into the map.  Whenever a 
+  subgoal is achieved, it is removed from the path drawn in the map.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>worldMap</code></strong> - instance of a subclass of <code>gridMap.GridMap</code></li>
+        <li><strong class="pname"><code>sensorInput</code></strong> - instance of <code>io.SensorInput</code>, containing current robot
+          pose</li>
+        <li><strong class="pname"><code>goalPoint</code></strong> - instance of <code>util.Point</code>, specifying goal</li>
+        <li><strong class="pname"><code>dynamicsModel</code></strong> - a state machine that specifies the transition dynamics for the 
+          robot in the grid map</li>
+        <li><strong class="pname"><code>path</code></strong> - the path (represented as a list of pairs of indices in the map) 
+          that the robot is currently following.  Can be <code>None</code> 
+          or <code>[]</code>.</li>
+        <li><strong class="pname"><code>timeToReplan</code></strong> - a procedure that takes <code>path</code>, the robot's current 
+          indices in the grid, the map, and the indices of the goal, and 
+          returns <code>True</code> or <code>False</code> indicating 
+          whether a new plan needs to be constructed.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a tuple <code>(path, subgoal)</code>, where <code>path</code> is 
+          a list of pairs of indices indicating a path through the grid, 
+          and <code>subgoal</code> is an instance of 
+          <code>util.Point</code> indicating the point in odometry 
+          coordinates that the robot should drive to.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="planInvalidInMap"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">planInvalidInMap</span>(<span class="sig-arg">map</span>,
+        <span class="sig-arg">state</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Just checks to be sure the first two cells are occupiable.  In low 
+  noise conditions, it's good to check the whole plan, so failures are 
+  discovered earlier;  but in high noise, we often have to get close to a 
+  location before we decide that it is really not safe to traverse.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="timeToReplanStaticMap"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">timeToReplanStaticMap</span>(<span class="sig-arg">plan</span>,
+        <span class="sig-arg">currentIndices</span>,
+        <span class="sig-arg">worldMap</span>,
+        <span class="sig-arg">goalIndices</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>When the map is static, we just test for kidnapping.  Replan if the 
+  current plan is <code>None</code> or if the robot is not in a grid cell 
+  that is adjacent to the first one in the plan.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:03:08 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

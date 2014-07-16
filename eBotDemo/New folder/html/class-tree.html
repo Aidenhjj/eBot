@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class Hierarchy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="class-tree.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<center><b>
+ [ <a href="module-tree.html">Module Hierarchy</a>
+ | <a href="class-tree.html">Class Hierarchy</a> ]
+</b></center><br />
+<h1 class="epydoc">Class Hierarchy</h1>
+<ul class="nomargin-top">
+    <li> <strong class="uidlink"><a href="circ.Circuit-class.html">circ.Circuit</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.Component-class.html">circ.Component</a></strong>:
+      <em class="summary">Generic superclass.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="circ.ISrc-class.html">circ.ISrc</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.OpAmp-class.html">circ.OpAmp</a></strong>:
+      <em class="summary">Asserts that  nOut = K(nPlus - nMinus).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.Resistor-class.html">circ.Resistor</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.Thevenin-class.html">circ.Thevenin</a></strong>:
+      <em class="summary">An abstract component consisting of a resistor and a voltage source
+        in series.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.VSrc-class.html">circ.VSrc</a></strong>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.Wire-class.html">circ.Wire</a></strong>:
+      <em class="summary">Just describes a wire between nodes <code>n1</code> and 
+        <code>n2</code>; nodes are specified by their names (strings)</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="corruptInput.CorruptedSensorInput-class.html">corruptInput.CorruptedSensorInput</a></strong>:
+      <em class="summary">This class has the same interface as <code>io.SensorInput</code>, 
+        so instances can be used anywhere we use instances of 
+        <code>io.SensorInput</code></em>
+    </li>
+    <li> <strong class="uidlink"><a href="dist.DDist-class.html">dist.DDist</a></strong>:
+      <em class="summary">Discrete distribution represented as a dictionary.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.DebugParams-class.html">sm.DebugParams</a></strong>:
+      <em class="summary">Housekeeping stuff</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sf.DifferenceEquation-class.html">sf.DifferenceEquation</a></strong>:
+      <em class="summary">Represent a difference equation in a form that makes it easy to 
+        simulate.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="le.Equation-class.html">le.Equation</a></strong>:
+      <em class="summary">Represent a single linear equation as a list of variable names, a 
+        list of coefficients, and a constant.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="le.EquationSet-class.html">le.EquationSet</a></strong>:
+      <em class="summary">Represent a set of linear equations</em>
+    </li>
+    <li> <strong class="uidlink">gridMap.GridMap</strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="dynamicGridMap.DynamicGridMap-class.html">dynamicGridMap.DynamicGridMap</a></strong>:
+      <em class="summary">Implements the <code>GridMap</code> interface.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="gridMap.GridMap-class.html">gridMap.GridMap</a></strong>
+    </li>
+    <li> <strong class="uidlink">gridMap.GridMap</strong>
+    <ul>
+    <li> <strong class="uidlink"><a href="basicGridMap.BasicGridMap-class.html">basicGridMap.BasicGridMap</a></strong>:
+      <em class="summary">Implements the <code>GridMap</code> interface.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="util.Line-class.html">util.Line</a></strong>:
+      <em class="summary">Line in 2D space</em>
+    </li>
+    <li> <strong class="uidlink"><a href="util.LineSeg-class.html">util.LineSeg</a></strong>:
+      <em class="summary">Line segment in 2D space</em>
+    </li>
+    <li> <strong class="uidlink"><a href="dist.MixtureDist-class.html">dist.MixtureDist</a></strong>:
+      <em class="summary">A mixture of two probabability distributions, d1 and d2, with 
+        mixture parameter p.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="le.NameToIndex-class.html">le.NameToIndex</a></strong>:
+      <em class="summary">Construct a unique mapping of names to indices.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="circ.NodeToCurrents-class.html">circ.NodeToCurrents</a></strong>:
+      <em class="summary">Keep track of which currents are flowing in and out of which nodes 
+        in a circuit.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ucSearch.PQ-class.html">ucSearch.PQ</a></strong>:
+      <em class="summary">Slow implementation of a priority queue that just finds the minimum
+        element for each extraction.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="util.Point-class.html">util.Point</a></strong>:
+      <em class="summary">Represent a point with its x, y values</em>
+    </li>
+    <li> <strong class="uidlink"><a href="poly.Polynomial-class.html">poly.Polynomial</a></strong>:
+      <em class="summary">Represent polynomials, and supports addition, subtraction, and root
+        finding.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="util.Pose-class.html">util.Pose</a></strong>:
+      <em class="summary">Represent the x, y, theta pose of an object in 2D space</em>
+    </li>
+    <li> <strong class="uidlink"><a href="search.Queue-class.html">search.Queue</a></strong>:
+      <em class="summary">Simple implementation of queue using a Python list.</em>
+    </li>
+    <li> <strong class="uidlink">sm.SM</strong>:
+      <em class="summary">Generic superclass representing state machines.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ltism.LTISM-class.html">ltism.LTISM</a></strong>:
+      <em class="summary">Class of state machines describable as LTI systems</em>
+    </li>
+    <li> <strong class="uidlink"><a href="move.MoveToDynamicPoint-class.html">move.MoveToDynamicPoint</a></strong>:
+      <em class="summary">Drive to a goal point in the frame defined by the odometry.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="move.MoveToFixedPoint-class.html">move.MoveToFixedPoint</a></strong>:
+      <em class="summary">State machine representing robot behavior that drives to a 
+        specified point.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="move.MoveToFixedPose-class.html">move.MoveToFixedPose</a></strong>:
+      <em class="summary">State machine representing robot behavior that drives to a 
+        specified pose.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="replanner.Replanner-class.html">replanner.Replanner</a></strong>:
+      <em class="summary">This replanner state machine has a fixed map, which it constructs 
+        at initialization time.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="replanner.ReplannerWithDynamicMap-class.html">replanner.ReplannerWithDynamicMap</a></strong>:
+      <em class="summary">This replanner state machine has a dynamic map, which is an input 
+        to the state machine.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="replanner.ReplannerWithDynamicMapAndGoal-class.html">replanner.ReplannerWithDynamicMapAndGoal</a></strong>:
+      <em class="summary">This replanner state machine has a dynamic map and a dynamic goal, 
+        both of which are inputs to the state machine.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="corruptInput.SensorCorrupter-class.html">corruptInput.SensorCorrupter</a></strong>:
+      <em class="summary">State machine that takes instances of <code>io.SensorInput</code> 
+        and adds noise to them.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="seFast.StateEstimator-class.html">seFast.StateEstimator</a></strong>:
+      <em class="summary">A state machine that performs state estimation, based on an input 
+        stream of (input, output pairs) and a stochastic state-machine 
+        model.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="seGraphics.StateEstimator-class.html">seGraphics.StateEstimator</a></strong>:
+      <em class="summary">By default, this is the same as <code>seFast.StateEstimator</code>.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="se.StateEstimator-class.html">se.StateEstimator</a></strong>:
+      <em class="summary">A state machine that performs state estimation, based on an input 
+        stream of (observation, input) pairs)and a stochastic state-machine
+        model.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="se.StateEstimatorTriggered-class.html">se.StateEstimatorTriggered</a></strong>:
+      <em class="summary">Like <code>StateEstimator</code>, but the inputs are 
+        <code>(observation, action, trigger)</code>.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="ssm.StochasticSM-class.html">ssm.StochasticSM</a></strong>:
+      <em class="summary">Stochastic state machine.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ssm.StochasticSMWithStateObservation-class.html">ssm.StochasticSMWithStateObservation</a></strong>:
+      <em class="summary">Special kind of stochastic state machine whose observation includes
+        its state</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="coloredHall.TextInputSM-class.html">coloredHall.TextInputSM</a></strong>:
+      <em class="summary">Machine that prompts a user for an input on each step.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.SM-class.html">sm.SM</a></strong>:
+      <em class="summary">Generic superclass representing state machines.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sm.Cascade-class.html">sm.Cascade</a></strong>:
+      <em class="summary">Cascade composition of two state machines.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Constant-class.html">sm.Constant</a></strong>:
+      <em class="summary">Machine whose output is a constant, independent of the input</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Feedback-class.html">sm.Feedback</a></strong>:
+      <em class="summary">Take the output of <code>m</code> and feed it back to its input.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sm.Feedback2-class.html">sm.Feedback2</a></strong>:
+      <em class="summary">Like previous <code>Feedback</code>, but takes a machine with two 
+        inps and one output at initialization time.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.FeedbackAdd-class.html">sm.FeedbackAdd</a></strong>:
+      <em class="summary">Takes two machines, m1 and m2.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.FeedbackSubtract-class.html">sm.FeedbackSubtract</a></strong>:
+      <em class="summary">Takes two machines, m1 and m2.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Gain-class.html">sm.Gain</a></strong>:
+      <em class="summary">Machine whose output is the input, but multiplied by k.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.If-class.html">sm.If</a></strong>:
+      <em class="summary">Given a condition (function from inps to boolean) and two state 
+        machines, make a new machine.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Parallel-class.html">sm.Parallel</a></strong>:
+      <em class="summary">Takes a single inp and feeds it to two machines in parallel.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sm.Parallel2-class.html">sm.Parallel2</a></strong>:
+      <em class="summary">Like <code>Parallel</code>, but takes two inps.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.ParallelAdd-class.html">sm.ParallelAdd</a></strong>:
+      <em class="summary">Like <code>Parallel</code>, but output is the sum of the outputs of
+        the two machines.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.PureFunction-class.html">sm.PureFunction</a></strong>:
+      <em class="summary">Machine whose output is produced by applying a specified Python 
+        function to its input.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.R-class.html">sm.R</a></strong>:
+      <em class="summary">Machine whose output is the input, but delayed by one time step.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Repeat-class.html">sm.Repeat</a></strong>:
+      <em class="summary">Given a terminating state machine, generate a new one that will 
+        execute it n times.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.RepeatUntil-class.html">sm.RepeatUntil</a></strong>:
+      <em class="summary">Given a terminating state machine and a condition on the input, 
+        generate a new one that will run the machine until the condition 
+        becomes true.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Select-class.html">sm.Select</a></strong>:
+      <em class="summary">Machine whose input is a structure list and whose output is the 
+        <code>k</code>th element of that list.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Sequence-class.html">sm.Sequence</a></strong>:
+      <em class="summary">Given a list of state machines, make a new machine that will 
+        execute the first until it is done, then execute the second, etc.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Switch-class.html">sm.Switch</a></strong>:
+      <em class="summary">Given a condition (function from inps to boolean) and two state 
+        machines, make a new machine.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sm.Mux-class.html">sm.Mux</a></strong>:
+      <em class="summary">Like <code>Switch</code>, but updates both machines no matter 
+        whether the condition is true or false.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Until-class.html">sm.Until</a></strong>:
+      <em class="summary">Execute SM until it terminates or the condition becomes true.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sm.Wire-class.html">sm.Wire</a></strong>:
+      <em class="summary">Machine whose output is the input</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="search.SearchNode-class.html">search.SearchNode</a></strong>:
+      <em class="summary">A node in a search tree</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ucSearch.SearchNode-class.html">ucSearch.SearchNode</a></strong>:
+      <em class="summary">A node in a search tree</em>
+    </li>
+    <li> <strong class="uidlink">sig.Signal</strong>:
+      <em class="summary">Represent infinite signals.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="ts.TransducedSignal-class.html">ts.TransducedSignal</a></strong>:
+      <em class="summary">Given a signal s, and a state machine m, generate a new signal that
+        has value 0 for any k &lt; 0, and otherwise has the output of m, 
+        with s as its input, as its value</em>
+    </li>
+    <li> <strong class="uidlink"><a href="ts.TransducedSignalSlow-class.html">ts.TransducedSignalSlow</a></strong>:
+      <em class="summary">Given a state a signal s and a state machine m, generate a new 
+        signal that has value 0 for any k &lt; 0, and otherwise has the 
+        output of m, with s as its input, as its value</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.Signal-class.html">sig.Signal</a></strong>:
+      <em class="summary">Represent infinite signals.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="sig.ConstantSignal-class.html">sig.ConstantSignal</a></strong>:
+      <em class="summary">Primitive constant sample signal.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.CosineSignal-class.html">sig.CosineSignal</a></strong>:
+      <em class="summary">Primitive family of sinusoidal signals.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.FilteredSignal-class.html">sig.FilteredSignal</a></strong>:
+      <em class="summary">Signal filtered by a function, applied to a fixed-sized window of 
+        previous values</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.ListSignal-class.html">sig.ListSignal</a></strong>:
+      <em class="summary">Signal defined with a specific list of sample values, from 0 to 
+        some fixed length;  It has value 0 elsewhere.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.ListSignalSampled-class.html">sig.ListSignalSampled</a></strong>:
+      <em class="summary">Signal defined with a specific list of sample values, from 0 to 
+        some fixed length;  It has the last value past the end and the 
+        first value before the start.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.R-class.html">sig.R</a></strong>:
+      <em class="summary">Signal delayed by one time step, so that <code>R(S).sample(n+1) = 
+        S.sample(n)</code></em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.Rn-class.html">sig.Rn</a></strong>:
+      <em class="summary">Signal delayed by several time steps</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.ScaledSignal-class.html">sig.ScaledSignal</a></strong>:
+      <em class="summary">Signal multiplied everywhere by a constant</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.StepSignal-class.html">sig.StepSignal</a></strong>:
+      <em class="summary">Signal that has value 1 for all n &gt;= 0, and value 0 otherwise.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.SummedSignal-class.html">sig.SummedSignal</a></strong>:
+      <em class="summary">Sum of two signals</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sig.UnitSampleSignal-class.html">sig.UnitSampleSignal</a></strong>:
+      <em class="summary">Primitive unit sample signal has value 1 at time 0 and value 0 
+        elsewhere.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="soarWorld.SoarWorld-class.html">soarWorld.SoarWorld</a></strong>:
+      <em class="summary">Represents a world in the same way as the soar simulator</em>
+    </li>
+    <li> <strong class="uidlink"><a href="le.Solution-class.html">le.Solution</a></strong>:
+      <em class="summary">Solution to a set of linear equations</em>
+    </li>
+    <li> <strong class="uidlink"><a href="search.Stack-class.html">search.Stack</a></strong>:
+      <em class="summary">Simple implementation of stack using a Python list.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="util.SymbolGenerator-class.html">util.SymbolGenerator</a></strong>:
+      <em class="summary">Generate new symbols guaranteed to be different from one another 
+        Optionally, supply a prefix for mnemonic purposes Call 
+        gensym(&quot;foo&quot;) to get a symbol like 'foo37'</em>
+    </li>
+    <li> <strong class="uidlink"><a href="sf.SystemFunction-class.html">sf.SystemFunction</a></strong>:
+      <em class="summary">Represent a system function as a ratio of polynomials in R</em>
+    </li>
+    <li> <strong class="uidlink"><a href="util.Transform-class.html">util.Transform</a></strong>:
+      <em class="summary">Rotation and translation represented as 3 x 3 matrix</em>
+    </li>
+</ul>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:07:30 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

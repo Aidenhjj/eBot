@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>code.libdw.dist</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;code ::
+        Package&nbsp;libdw ::
+        Module&nbsp;dist
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="code.libdw.dist-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module dist</h1><p class="nomargin-top"></p>
+<p>Discrete probability distributions</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="code.libdw.dist.DDist-class.html" class="summary-name">DDist</a><br />
+      Discrete distribution represented as a dictionary.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="code.libdw.dist.MixtureDist-class.html" class="summary-name">MixtureDist</a><br />
+      A mixture of two probabability distributions, d1 and d2, with 
+        mixture parameter p.
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="DeltaDist"></a><span class="summary-sig-name">DeltaDist</span>(<span class="summary-sig-arg">v</span>)</span><br />
+      Distribution with all of its probability mass on value <code>v</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#JDist" class="summary-sig-name">JDist</a>(<span class="summary-sig-arg">PA</span>,
+        <span class="summary-sig-arg">PBgA</span>)</span><br />
+      Create a joint distribution on P(A, B) (in that order), represented 
+      as a <code>DDist</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#UniformDist" class="summary-sig-name">UniformDist</a>(<span class="summary-sig-arg">elts</span>)</span><br />
+      Uniform distribution over a given finite set of <code>elts</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#bayesEvidence" class="summary-sig-name">bayesEvidence</a>(<span class="summary-sig-arg">PA</span>,
+        <span class="summary-sig-arg">PBgA</span>,
+        <span class="summary-sig-arg">b</span>)</span><br />
+      Returns:
+      P(A | b)</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#incrDictEntry" class="summary-sig-name">incrDictEntry</a>(<span class="summary-sig-arg">d</span>,
+        <span class="summary-sig-arg">k</span>,
+        <span class="summary-sig-arg">v</span>)</span><br />
+      If dictionary <code>d</code> has key <code>k</code>, then increment 
+      <code>d[k]</code> by <code>v</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="removeElt"></a><span class="summary-sig-name">removeElt</span>(<span class="summary-sig-arg">items</span>,
+        <span class="summary-sig-arg">i</span>)</span><br />
+      non-destructively remove the element at index i from a list; returns 
+      a copy;  if the result is a list of length 1, just return the element</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#squareDist" class="summary-sig-name">squareDist</a>(<span class="summary-sig-arg">lo</span>,
+        <span class="summary-sig-arg">hi</span>,
+        <span class="summary-sig-arg">loLimit</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">hiLimit</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Construct and return a DDist over integers.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#totalProbability" class="summary-sig-name">totalProbability</a>(<span class="summary-sig-arg">PA</span>,
+        <span class="summary-sig-arg">PBgA</span>)</span><br />
+      Returns:
+      P(B) using the law of total probability.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="code.libdw.dist-module.html#triangleDist" class="summary-sig-name">triangleDist</a>(<span class="summary-sig-arg">peak</span>,
+        <span class="summary-sig-arg">halfWidth</span>,
+        <span class="summary-sig-arg">lo</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">hi</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Construct and return a DDist over integers.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'code.libdw'"><code class="variable-quote">'</code><code class="variable-string">code.libdw</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="JDist"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">JDist</span>(<span class="sig-arg">PA</span>,
+        <span class="sig-arg">PBgA</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Create a joint distribution on P(A, B) (in that order), represented as
+  a <code>DDist</code></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>PA</code></strong> - a <code>DDist</code> on some random var A</li>
+        <li><strong class="pname"><code>PBgA</code></strong> - a conditional probability distribution specifying P(B | A) (that 
+          is, a function from elements of A to <code>DDist</code> on B)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="UniformDist"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">UniformDist</span>(<span class="sig-arg">elts</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Uniform distribution over a given finite set of <code>elts</code></p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>elts</code></strong> - list of any kind of item</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="bayesEvidence"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">bayesEvidence</span>(<span class="sig-arg">PA</span>,
+        <span class="sig-arg">PBgA</span>,
+        <span class="sig-arg">b</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>PBgA</code></strong> - conditional distribution over B given A (function from values of 
+          a to <code>DDist</code> over B)</li>
+        <li><strong class="pname"><code>PA</code></strong> - prior on A</li>
+        <li><strong class="pname"><code>b</code></strong> - evidence value for B = b</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>P(A | b)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="incrDictEntry"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">incrDictEntry</span>(<span class="sig-arg">d</span>,
+        <span class="sig-arg">k</span>,
+        <span class="sig-arg">v</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>If dictionary <code>d</code> has key <code>k</code>, then increment 
+  <code>d[k]</code> by <code>v</code>. Else set <code>d[k] = v</code>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>d</code></strong> - dictionary</li>
+        <li><strong class="pname"><code>k</code></strong> - legal dictionary key (doesn't have to be in <code>d</code>)</li>
+        <li><strong class="pname"><code>v</code></strong> - numeric value</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="squareDist"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">squareDist</span>(<span class="sig-arg">lo</span>,
+        <span class="sig-arg">hi</span>,
+        <span class="sig-arg">loLimit</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">hiLimit</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Construct and return a DDist over integers.  The distribution will 
+  have a uniform distribution on integers from lo to hi-1 (inclusive). Any 
+  probability mass that would be below <code>lo</code> or above 
+  <code>hi</code> is assigned to <code>lo</code> or <code>hi</code>.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="totalProbability"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">totalProbability</span>(<span class="sig-arg">PA</span>,
+        <span class="sig-arg">PBgA</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>PBgA</code></strong> - conditional distribution over B given A (function from values of 
+          a to <code>DDist</code> over B)</li>
+        <li><strong class="pname"><code>PA</code></strong> - distribution over A (object of type <code>DiscreteDist</code>)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>P(B) using the law of total probability. <code>self</code> 
+          represents P(B | A);  P(A) is the argument to the method; we 
+          compute and return P(B) as sum_a P(B | a) P(a)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="triangleDist"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">triangleDist</span>(<span class="sig-arg">peak</span>,
+        <span class="sig-arg">halfWidth</span>,
+        <span class="sig-arg">lo</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">hi</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Construct and return a DDist over integers. The distribution will have
+  its peak at index <code>peak</code> and fall off linearly from there, 
+  reaching 0 at an index <code>halfWidth</code> on either side of 
+  <code>peak</code>.  Any probability mass that would be below 
+  <code>lo</code> or above <code>hi</code> is assigned to <code>lo</code> 
+  or <code>hi</code></p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:03:08 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

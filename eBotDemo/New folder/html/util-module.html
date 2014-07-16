@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>util</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;util
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="util-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module util</h1><p class="nomargin-top"></p>
+<p>A wide variety of utility procedures and classes.</p>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="util.Pose-class.html" class="summary-name">Pose</a><br />
+      Represent the x, y, theta pose of an object in 2D space
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="util.Point-class.html" class="summary-name">Point</a><br />
+      Represent a point with its x, y values
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="util.Transform-class.html" class="summary-name">Transform</a><br />
+      Rotation and translation represented as 3 x 3 matrix
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="util.Line-class.html" class="summary-name">Line</a><br />
+      Line in 2D space
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="util.LineSeg-class.html" class="summary-name">LineSeg</a><br />
+      Line segment in 2D space
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="util.SymbolGenerator-class.html" class="summary-name">SymbolGenerator</a><br />
+      Generate new symbols guaranteed to be different from one another 
+        Optionally, supply a prefix for mnemonic purposes Call 
+        gensym(&quot;foo&quot;) to get a symbol like 'foo37'
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Functions</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#valueListToPose" class="summary-sig-name">valueListToPose</a>(<span class="summary-sig-arg">values</span>)</span><br />
+      Returns:
+      a corresponding <code>util.Pose</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#localToGlobal" class="summary-sig-name">localToGlobal</a>(<span class="summary-sig-arg">pose</span>,
+        <span class="summary-sig-arg">point</span>)</span><br />
+      Same as pose.transformPoint(point)</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#localPoseToGlobalPose" class="summary-sig-name">localPoseToGlobalPose</a>(<span class="summary-sig-arg">pose1</span>,
+        <span class="summary-sig-arg">pose2</span>)</span><br />
+      Applies the transform from pose1 to pose2</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#inversePose" class="summary-sig-name">inversePose</a>(<span class="summary-sig-arg">pose</span>)</span><br />
+      Same as pose.inverse()</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#globalToLocal" class="summary-sig-name">globalToLocal</a>(<span class="summary-sig-arg">pose</span>,
+        <span class="summary-sig-arg">point</span>)</span><br />
+      Applies inverse of pose to point.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#globalPoseToLocalPose" class="summary-sig-name">globalPoseToLocalPose</a>(<span class="summary-sig-arg">pose1</span>,
+        <span class="summary-sig-arg">pose2</span>)</span><br />
+      Applies inverse of pose1 to pose2.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#globalDeltaToLocal" class="summary-sig-name">globalDeltaToLocal</a>(<span class="summary-sig-arg">pose</span>,
+        <span class="summary-sig-arg">deltaPoint</span>)</span><br />
+      Applies inverse of pose to delta using transformDelta.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="sum"></a><span class="summary-sig-name">sum</span>(<span class="summary-sig-arg">items</span>)</span><br />
+      Defined to work on items other than numbers, which is not true for 
+      the built-in sum.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#within" class="summary-sig-name">within</a>(<span class="summary-sig-arg">v1</span>,
+        <span class="summary-sig-arg">v2</span>,
+        <span class="summary-sig-arg">eps</span>)</span><br />
+      Returns:
+      <code>True</code> if <code>v1</code> is with <code>eps</code> of 
+      <code>v2</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#nearAngle" class="summary-sig-name">nearAngle</a>(<span class="summary-sig-arg">a1</span>,
+        <span class="summary-sig-arg">a2</span>,
+        <span class="summary-sig-arg">eps</span>)</span><br />
+      Returns:
+      <code>True</code> if <code>a1</code> is within <code>eps</code> of 
+      <code>a2</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="nearlyEqual"></a><span class="summary-sig-name">nearlyEqual</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>)</span><br />
+      Like within, but with the tolerance built in</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="mm"></a><span class="summary-sig-name">mm</span>(<span class="summary-sig-arg">t1</span>,
+        <span class="summary-sig-arg">t2</span>)</span><br />
+      Multiplies 3 x 3 matrices represented as lists of lists</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="fixAnglePlusMinusPi"></a><span class="summary-sig-name">fixAnglePlusMinusPi</span>(<span class="summary-sig-arg">a</span>)</span><br />
+      A is an angle in radians;  return an equivalent angle between plus 
+      and minus pi</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#fixAngle02Pi" class="summary-sig-name">fixAngle02Pi</a>(<span class="summary-sig-arg">a</span>)</span><br />
+      Returns:
+      return an equivalent angle between 0 and 2 pi</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="reverseCopy"></a><span class="summary-sig-name">reverseCopy</span>(<span class="summary-sig-arg">items</span>)</span><br />
+      Return a list that is a reversed copy of items</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="dotProd"></a><span class="summary-sig-name">dotProd</span>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span><br />
+      Return the dot product of two lists of numbers</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#argmax" class="summary-sig-name">argmax</a>(<span class="summary-sig-arg">l</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Returns:
+      the element of <code>l</code> that has the highest score</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#argmaxWithVal" class="summary-sig-name">argmaxWithVal</a>(<span class="summary-sig-arg">l</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Returns:
+      the element of <code>l</code> that has the highest score and the 
+      score</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#argmaxIndex" class="summary-sig-name">argmaxIndex</a>(<span class="summary-sig-arg">l</span>,
+        <span class="summary-sig-arg">f</span>=<span class="summary-sig-default">&lt;function &lt;lambda&gt; at 0x100ada9b0&gt;</span>)</span><br />
+      Returns:
+      the index of <code>l</code> that has the highest score</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="argmaxIndices3D"></a><span class="summary-sig-name">argmaxIndices3D</span>(<span class="summary-sig-arg">l</span>,
+        <span class="summary-sig-arg">f</span>=<span class="summary-sig-default">&lt;function &lt;lambda&gt; at 0x100adaaa0&gt;</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#randomMultinomial" class="summary-sig-name">randomMultinomial</a>(<span class="summary-sig-arg">dist</span>)</span><br />
+      Returns:
+      random draw from that distribution</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#clip" class="summary-sig-name">clip</a>(<span class="summary-sig-arg">v</span>,
+        <span class="summary-sig-arg">vMin</span>,
+        <span class="summary-sig-arg">vMax</span>)</span><br />
+      Returns:
+      If <code>vMin &lt;= v &lt;= vMax</code>, then return <code>v</code>; 
+      if <code>v &lt; vMin</code> return <code>vMin</code>; else return 
+      <code>vMax</code></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="sign"></a><span class="summary-sig-name">sign</span>(<span class="summary-sig-arg">x</span>)</span><br />
+      Return 1, 0, or -1 depending on the sign of x</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="make2DArray"></a><span class="summary-sig-name">make2DArray</span>(<span class="summary-sig-arg">dim1</span>,
+        <span class="summary-sig-arg">dim2</span>,
+        <span class="summary-sig-arg">initValue</span>)</span><br />
+      Return a list of lists representing a 2D array with dimensions dim1 
+      and dim2, filled with initialValue</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="make2DArrayFill"></a><span class="summary-sig-name">make2DArrayFill</span>(<span class="summary-sig-arg">dim1</span>,
+        <span class="summary-sig-arg">dim2</span>,
+        <span class="summary-sig-arg">initFun</span>)</span><br />
+      Return a list of lists representing a 2D array with dimensions 
+      <code>dim1</code> and <code>dim2</code>, filled by calling 
+      <code>initFun(ix, iy)</code> with <code>ix</code> ranging from 0 to 
+      <code>dim1 - 1</code> and <code>iy</code> ranging from 0 to 
+      <code>dim2-1</code>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="make3DArray"></a><span class="summary-sig-name">make3DArray</span>(<span class="summary-sig-arg">dim1</span>,
+        <span class="summary-sig-arg">dim2</span>,
+        <span class="summary-sig-arg">dim3</span>,
+        <span class="summary-sig-arg">initValue</span>)</span><br />
+      Return a list of lists of lists representing a 3D array with 
+      dimensions dim1, dim2, and dim3 filled with initialValue</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#mapArray3D" class="summary-sig-name">mapArray3D</a>(<span class="summary-sig-arg">array</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Map a function over the whole array.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="makeVector"></a><span class="summary-sig-name">makeVector</span>(<span class="summary-sig-arg">dim</span>,
+        <span class="summary-sig-arg">initValue</span>)</span><br />
+      Return a list of dim copies of initValue</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="makeVectorFill"></a><span class="summary-sig-name">makeVectorFill</span>(<span class="summary-sig-arg">dim</span>,
+        <span class="summary-sig-arg">initFun</span>)</span><br />
+      Return a list resulting from applying initFun to values from 0 to 
+      dim-1</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="prettyString"></a><span class="summary-sig-name">prettyString</span>(<span class="summary-sig-arg">struct</span>)</span><br />
+      Make nicer looking strings for printing, mostly by truncating floats</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="prettyPrint"></a><span class="summary-sig-name">prettyPrint</span>(<span class="summary-sig-arg">struct</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="gensym"></a><span class="summary-sig-name">gensym</span>(<span class="summary-sig-arg">prefix</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">i</code><code class="variable-quote">'</code></span>)</span><br />
+      Call this function to get a new symbol</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="logGaussian"></a><span class="summary-sig-name">logGaussian</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">mu</span>,
+        <span class="summary-sig-arg">sigma</span>)</span><br />
+      Log of the value of the gaussian distribution with mean mu and stdev 
+      sigma at value x</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="gaussian"></a><span class="summary-sig-name">gaussian</span>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">mu</span>,
+        <span class="summary-sig-arg">sigma</span>)</span><br />
+      Value of the gaussian distribution with mean mu and stdev sigma at 
+      value x</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="lineIndices"></a><span class="summary-sig-name">lineIndices</span>(<span class="summary-sig-arg">(i0, j0)</span>,
+        <span class="summary-sig-arg">(i1, j1)</span>)</span><br />
+      Takes two cells in the grid (each described by a pair of integer 
+      indices), and returns a list of the cells in the grid that are on the
+      line segment between the cells.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="util-module.html#lineIndicesConservative" class="summary-sig-name">lineIndicesConservative</a>(<span class="summary-sig-arg">(i0, j0)</span>,
+        <span class="summary-sig-arg">(i1, j1)</span>)</span><br />
+      Takes two cells in the grid (each described by a pair of integer 
+      indices), and returns a list of the cells in the grid that are on the
+      line segment between the cells.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="findFile"></a><span class="summary-sig-name">findFile</span>(<span class="summary-sig-arg">filename</span>)</span><br />
+      Takes a filename and returns a complete path to the first instance of
+      the file found within the subdirectories of the brain directory.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="None">None</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Function Details</span></td>
+</tr>
+</table>
+<a name="valueListToPose"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">valueListToPose</span>(<span class="sig-arg">values</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>values</code></strong> - a list or tuple of three values: x, y, theta</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a corresponding <code>util.Pose</code></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="localToGlobal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">localToGlobal</span>(<span class="sig-arg">pose</span>,
+        <span class="sig-arg">point</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Same as pose.transformPoint(point)</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>point</code></strong> - instance of <code>util.Point</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="localPoseToGlobalPose"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">localPoseToGlobalPose</span>(<span class="sig-arg">pose1</span>,
+        <span class="sig-arg">pose2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Applies the transform from pose1 to pose2</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pose1</code></strong> - instance of <code>util.Pose</code></li>
+        <li><strong class="pname"><code>pose2</code></strong> - instance of <code>util.Pose</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="inversePose"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">inversePose</span>(<span class="sig-arg">pose</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Same as pose.inverse()</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pose</code></strong> - instance of <code>util.Pose</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="globalToLocal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">globalToLocal</span>(<span class="sig-arg">pose</span>,
+        <span class="sig-arg">point</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Applies inverse of pose to point.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pose</code></strong> - instance of <code>util.Pose</code></li>
+        <li><strong class="pname"><code>point</code></strong> - instance of <code>util.Point</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="globalPoseToLocalPose"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">globalPoseToLocalPose</span>(<span class="sig-arg">pose1</span>,
+        <span class="sig-arg">pose2</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Applies inverse of pose1 to pose2.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pose1</code></strong> - instance of <code>util.Pose</code></li>
+        <li><strong class="pname"><code>pose2</code></strong> - instance of <code>util.Pose</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="globalDeltaToLocal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">globalDeltaToLocal</span>(<span class="sig-arg">pose</span>,
+        <span class="sig-arg">deltaPoint</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Applies inverse of pose to delta using transformDelta.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pose</code></strong> - instance of <code>util.Pose</code></li>
+        <li><strong class="pname"><code>deltaPoint</code></strong> - instance of <code>util.Point</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="within"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">within</span>(<span class="sig-arg">v1</span>,
+        <span class="sig-arg">v2</span>,
+        <span class="sig-arg">eps</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>v1</code></strong> - number</li>
+        <li><strong class="pname"><code>v2</code></strong> - number</li>
+        <li><strong class="pname"><code>eps</code></strong> - positive number</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>True</code> if <code>v1</code> is with <code>eps</code> of 
+          <code>v2</code></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="nearAngle"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">nearAngle</span>(<span class="sig-arg">a1</span>,
+        <span class="sig-arg">a2</span>,
+        <span class="sig-arg">eps</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a1</code></strong> - number representing angle; no restriction on range</li>
+        <li><strong class="pname"><code>a2</code></strong> - number representing angle; no restriction on range</li>
+        <li><strong class="pname"><code>eps</code></strong> - positive number</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd><code>True</code> if <code>a1</code> is within <code>eps</code> 
+          of <code>a2</code>.  Don't use within for this, because angles 
+          wrap around!</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="fixAngle02Pi"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">fixAngle02Pi</span>(<span class="sig-arg">a</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> - angle in radians</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>return an equivalent angle between 0 and 2 pi</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="argmax"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">argmax</span>(<span class="sig-arg">l</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>l</code></strong> - <code>List</code> of items</li>
+        <li><strong class="pname"><code>f</code></strong> - <code>Procedure</code> that maps an item into a numeric score</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>the element of <code>l</code> that has the highest score</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="argmaxWithVal"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">argmaxWithVal</span>(<span class="sig-arg">l</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>l</code></strong> - <code>List</code> of items</li>
+        <li><strong class="pname"><code>f</code></strong> - <code>Procedure</code> that maps an item into a numeric score</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>the element of <code>l</code> that has the highest score and the 
+          score</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="argmaxIndex"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">argmaxIndex</span>(<span class="sig-arg">l</span>,
+        <span class="sig-arg">f</span>=<span class="sig-default">&lt;function &lt;lambda&gt; at 0x100ada9b0&gt;</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>l</code></strong> - <code>List</code> of items</li>
+        <li><strong class="pname"><code>f</code></strong> - <code>Procedure</code> that maps an item into a numeric score</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>the index of <code>l</code> that has the highest score</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="randomMultinomial"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">randomMultinomial</span>(<span class="sig-arg">dist</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dist</code></strong> - List of positive numbers summing to 1 representing a multinomial 
+          distribution over integers from 0 to <code>len(dist)-1</code>.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>random draw from that distribution</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clip"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clip</span>(<span class="sig-arg">v</span>,
+        <span class="sig-arg">vMin</span>,
+        <span class="sig-arg">vMax</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>v</code></strong> - number</li>
+        <li><strong class="pname"><code>vMin</code></strong> - number (may be None, if no limit)</li>
+        <li><strong class="pname"><code>vMax</code></strong> - number greater than <code>vMin</code> (may be None, if no limit)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>If <code>vMin &lt;= v &lt;= vMax</code>, then return 
+          <code>v</code>; if <code>v &lt; vMin</code> return 
+          <code>vMin</code>; else return <code>vMax</code></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="mapArray3D"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">mapArray3D</span>(<span class="sig-arg">array</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Map a function over the whole array.  Side effects the array.  No 
+  return value.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="lineIndicesConservative"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">lineIndicesConservative</span>(<span class="sig-arg">(i0, j0)</span>,
+        <span class="sig-arg">(i1, j1)</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Takes two cells in the grid (each described by a pair of integer 
+  indices), and returns a list of the cells in the grid that are on the 
+  line segment between the cells.  This is a conservative version.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >dw</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Mon Jan 21 13:07:30 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
