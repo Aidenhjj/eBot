@@ -1,4 +1,4 @@
 eBot
 ====
 
-APIs used for interfacing with an eBot
+API and example demo to interface with initial eBots with IR
