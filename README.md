@@ -1,4 +1,4 @@
 eBot
 ====
 
-This is the Repository which would have all the python code for interfacing with eBot
+APIs used for interfacing with an eBot
